@@ -15,6 +15,12 @@ This repository provides the **code, datasets, and experimental resources** supp
 > **Extreme TinyGPT: Uso de Pequenos Modelos de Linguagem em Sistemas Embarcados como Assistente Técnico Industrial**  
 > *Presented at CBA 2026 (XXV Congresso Brasileiro de Automática)*
 
+
+
+**Course video**
+
+[![Watch the video](etinyGPT.png)](https://youtu.be/1ZsMTLZP06w)
+
 The study proposes an **end-to-end pipeline for offline technical question answering** on microcontroller-class hardware, targeting **Industry 4.0** scenarios where connectivity is restricted. It integrates synthetic question–answer generation from industrial manuals, training of a **decoder‑only Extreme Small Language Model (Extreme SLM)**, conversion to **self‑contained C++ code**, and deployment on an **ESP32** platform with **Bluetooth** interaction—all without cloud dependence.
 
 
