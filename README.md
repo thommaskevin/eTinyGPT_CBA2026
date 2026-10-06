@@ -27,13 +27,11 @@ CBA2026_QA_INDUSTRIAL/
 ├── data/
 │   ├── CAT-4083-UK.pdf
 │   └── dataset_CAT-4083-UK.json
-├── figures/
 ├── results/
 │   ├── cpp_models/
-│   ├── evaluations/
+│   ├── hyperparameter_search_summary.csv
+│   ├── hyperparameter_search_summary.json
 │   └── json_models/
-├── hyperparameter_search_summary.csv
-├── hyperparameter_search_summary.json
 ├── src/
 │   ├── model/
 │   ├── utils/
@@ -42,7 +40,6 @@ CBA2026_QA_INDUSTRIAL/
 ├── .gitignore
 ├── 01_dataset_generator.ipynb
 ├── 02_training_model.ipynb
-├── 03_result_visualization.ipynb
 ├── LICENSE
 ├── README.md
 └── requirements.txt
@@ -85,16 +82,15 @@ pip install -r requirements.txt
 
 ## 📚 Jupyter Notebooks
 
--  [![Python](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/conect2ai/CBA2026_QA_Industrial/blob/main/01_dataset_generator.ipynb)  Dataset generator
+-  [![Python](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/thommaskevin/eTinyGPT_CBA2026/blob/main/01_dataset_generator.ipynb)  Dataset generator
 
--  [![Python](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/conect2ai/CBA2026_QA_Industrial/blob/main/02_training_model.ipynb)  Training model
+-  [![Python](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/thommaskevin/eTinyGPT_CBA2026/blob/main/02_training_model.ipynb)  Training model
 
--  [![Python](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/conect2ai/CBA2026_QA_Industrial/blob/main/03_result_visualization.ipynb) Result visualization
 
 
 ## 📚 Arduino Code
 
--  [![Jupyter](https://img.shields.io/badge/Arduino-00878F?logo=arduino&logoColor=fff&style=plastic)]( ) SLM with bluetooth communication
+-  [![Jupyter](https://img.shields.io/badge/Arduino-00878F?logo=arduino&logoColor=fff&style=plastic)](https://github.com/thommaskevin/eTinyGPT_CBA2026/tree/main/arduino_code) SLM with bluetooth communication
 
 
 
@@ -158,37 +154,11 @@ The best Extreme SLM configuration was deployed on an **ESP32‑WROOM‑32 DevKi
 | **Inference latency**      | 318 ms               |
 | **Interaction**            | Bluetooth Serial      |
 
-The firmware receives queries from an Android smartphone via Bluetooth, performs **autoregressive token generation**, and returns the answer **completely offline**.
-
-<p align="center">
-  <img width="250" height = "500" alt="Bluetooth session showing Q&A on ESP32" src="./figures/bluetooth.png">
-</p>
-
-
-
-## 📊 Results Overview
-
-- **Lowest test loss:** 6.933 (embedding=24, heads=4, layers=2)  
-- **Best BLEU:** 0.156  
-- **Exact match (non‑zero):** achieved in 14% of configurations  
-- **Pareto‑optimal models:** 193–220 KB for ~8.5 test loss  
-
-The **interactive response time** (including Bluetooth communication) was **~860 ms**, with **318 ms** of pure on‑device inference.
-
-
-
-## 🧠 Conclusion
-
-This work demonstrates a **complete, hardware‑aware pipeline** for embedding language‑model‑based technical assistance directly into **microcontroller‑class industrial devices**.  
-
-The approach advances **offline, privacy‑preserving intelligence at the edge**, reducing reliance on cloud connectivity and specialized personnel. The main limitations—dataset size and context window—point to future work in **quantization, pruning, and hardware‑software co‑design**.
-
-
 
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) – © 2026 Conect2ai.
+This project is licensed under the [MIT License](LICENSE) – © 2026.
 
 
 
