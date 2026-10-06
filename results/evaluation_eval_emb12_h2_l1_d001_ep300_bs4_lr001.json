@@ -1,0 +1,65 @@
+{
+  "total_loss": 8.9437894821167,
+  "total_items": 1,
+  "correct_predictions": 29,
+  "total_tokens": 104,
+  "exact_matches": 0,
+  "bleu_scores": [
+    0.0,
+    0.0,
+    0.25,
+    0.125,
+    0.0,
+    0.0
+  ],
+  "generated_examples": [
+    {
+      "question": "what is the pressure range for scp03-xxx-xx-xxq8 model?",
+      "reference": "-1 to 3 bar pressure range.",
+      "generated": "stainless steel.",
+      "bleu_score": 0.0,
+      "exact_match": 0
+    },
+    {
+      "question": "how many pressure ranges are specified for 4...20 ma output?",
+      "reference": "6 pressure ranges listed.",
+      "generated": "20 bar",
+      "bleu_score": 0.0,
+      "exact_match": 0
+    },
+    {
+      "question": "what is the output signal range for the pressure sensor scp03?",
+      "reference": "4...20 ma 3-wire or 0...10 v",
+      "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+      "bleu_score": 0.25,
+      "exact_match": 0
+    },
+    {
+      "question": "what is the output signal range for 0-250 bar pressure measurement?",
+      "reference": "0.5...4.5 v ratiometric",
+      "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+      "bleu_score": 0.125,
+      "exact_match": 0
+    },
+    {
+      "question": "what is the maximum pressure rating for the g1/4 bspp o-ring?",
+      "reference": "600 bar maximum pressure rating",
+      "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+      "bleu_score": 0.0,
+      "exact_match": 0
+    },
+    {
+      "question": "how many sensors are required for a 150s device?",
+      "reference": "150 sensors total 30 sets of 5 .",
+      "generated": "the m12 4p connector has four pins.",
+      "bleu_score": 0.0,
+      "exact_match": 0
+    }
+  ],
+  "avg_loss": 8.9437894821167,
+  "perplexity": 7660.170202357485,
+  "token_accuracy": 0.27884615384615385,
+  "num_samples": 6,
+  "avg_bleu": 0.0625,
+  "exact_match_rate": 0.0
+}

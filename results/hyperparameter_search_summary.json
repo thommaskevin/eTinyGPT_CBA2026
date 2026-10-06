@@ -1,0 +1,214 @@
+[
+  {
+    "config_id": "emb12_h2_l1_d001_ep300_bs4_lr001",
+    "params": {
+      "embedding_dim": 12,
+      "heads": 2,
+      "layers": 1,
+      "drop_rate": 0.01,
+      "num_epochs": 300,
+      "batch_size": 4,
+      "lr": 0.01
+    },
+    "train_metrics": {
+      "total_loss": 0.16340939700603485,
+      "total_items": 1,
+      "correct_predictions": 220,
+      "total_tokens": 236,
+      "exact_matches": 14,
+      "bleu_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "generated_examples": [
+        {
+          "question": "what standards do the instruments meet according to the eu?",
+          "reference": "din/en 61000-6-2 and din/en 61000-6-3.",
+          "generated": "din/en 61000-6-2 and din/en 61000-6-3.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "how many pages are dedicated to pressure sensor selection guides?",
+          "reference": "two pages 6 and 7 .",
+          "generated": "two pages 6 and 7 .",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what pressure ranges do scp09 and scp10 sensors measure?",
+          "reference": "scp09 and scp10 measure mid and high pressure ranges.",
+          "generated": "scp09 and scp10 measure mid and high pressure ranges.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what are the three main measurement types covered by the scpsdi i/o-link switch family?",
+          "reference": "pressure, temperature, and level monitoring.",
+          "generated": "pressure, temperature, and level monitoring.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what is the output voltage range for scp03 pressure sensor?",
+          "reference": "0.5...4.5 v ratiometric 5v",
+          "generated": "0.5...4.5 v ratiometric 5v",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what is the electrical output range for 4-20ma sensors?",
+          "reference": "4...20 ma 3-wire or 4...20 ma 2-wire",
+          "generated": "4...20 ma 3-wire or 4...20 ma 2-wire",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what material are the sensor housings made of?",
+          "reference": "stainless steel.",
+          "generated": "stainless steel.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what is the maximum pressure rating for scp03 sensors?",
+          "reference": "up to 1000 bar.",
+          "generated": "up to 1000 bar.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what is the maximum pressure rating for scp09?",
+          "reference": "up to 600 bar.",
+          "generated": "up to 600 bar.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what is the measuring range of the scp03 pressure sensor in bar?",
+          "reference": "from -1 to 1000 bar.",
+          "generated": "from -1 to 1000 bar.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what is the maximum overload pressure for scp03-010r in bar?",
+          "reference": "20 bar",
+          "generated": "20 bar",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "what are the output signal ranges for the scp03 pressure sensor?",
+          "reference": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+          "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "how many pins does the m12x1 4-pole connector have?",
+          "reference": "four pins.",
+          "generated": "four pins.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        },
+        {
+          "question": "how many pins does the m12 4p connector have?",
+          "reference": "the m12 4p connector has four pins.",
+          "generated": "the m12 4p connector has four pins.",
+          "bleu_score": 1.0,
+          "exact_match": 1
+        }
+      ],
+      "avg_loss": 0.16340939700603485,
+      "perplexity": 1.1775186636378328,
+      "token_accuracy": 0.9322033898305084,
+      "num_samples": 14,
+      "avg_bleu": 1.0,
+      "exact_match_rate": 1.0
+    },
+    "eval_metrics": {
+      "total_loss": 8.9437894821167,
+      "total_items": 1,
+      "correct_predictions": 29,
+      "total_tokens": 104,
+      "exact_matches": 0,
+      "bleu_scores": [
+        0.0,
+        0.0,
+        0.25,
+        0.125,
+        0.0,
+        0.0
+      ],
+      "generated_examples": [
+        {
+          "question": "what is the pressure range for scp03-xxx-xx-xxq8 model?",
+          "reference": "-1 to 3 bar pressure range.",
+          "generated": "stainless steel.",
+          "bleu_score": 0.0,
+          "exact_match": 0
+        },
+        {
+          "question": "how many pressure ranges are specified for 4...20 ma output?",
+          "reference": "6 pressure ranges listed.",
+          "generated": "20 bar",
+          "bleu_score": 0.0,
+          "exact_match": 0
+        },
+        {
+          "question": "what is the output signal range for the pressure sensor scp03?",
+          "reference": "4...20 ma 3-wire or 0...10 v",
+          "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+          "bleu_score": 0.25,
+          "exact_match": 0
+        },
+        {
+          "question": "what is the output signal range for 0-250 bar pressure measurement?",
+          "reference": "0.5...4.5 v ratiometric",
+          "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+          "bleu_score": 0.125,
+          "exact_match": 0
+        },
+        {
+          "question": "what is the maximum pressure rating for the g1/4 bspp o-ring?",
+          "reference": "600 bar maximum pressure rating",
+          "generated": "0...20 ma, 0.5...4.5 v, 1...6 v, 4...20 ma",
+          "bleu_score": 0.0,
+          "exact_match": 0
+        },
+        {
+          "question": "how many sensors are required for a 150s device?",
+          "reference": "150 sensors total 30 sets of 5 .",
+          "generated": "the m12 4p connector has four pins.",
+          "bleu_score": 0.0,
+          "exact_match": 0
+        }
+      ],
+      "avg_loss": 8.9437894821167,
+      "perplexity": 7660.170202357485,
+      "token_accuracy": 0.27884615384615385,
+      "num_samples": 6,
+      "avg_bleu": 0.0625,
+      "exact_match_rate": 0.0
+    },
+    "train_json": "evaluation_train_emb12_h2_l1_d001_ep300_bs4_lr001.json",
+    "eval_json": "evaluation_eval_emb12_h2_l1_d001_ep300_bs4_lr001.json",
+    "model_dir": "output_dir_emb12_h2_l1_d001_ep300_bs4_lr001",
+    "arduino_dir": "output_arduino_emb12_h2_l1_d001_ep300_bs4_lr001",
+    "number_parameter": 4848,
+    "cpp_model_size": 86347
+  }
+]

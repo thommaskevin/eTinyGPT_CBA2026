@@ -1,0 +1,2 @@
+config_id,embedding_dim,heads,layers,drop_rate,num_epochs,batch_size,lr,train_avg_loss,train_perplexity,train_token_accuracy,train_num_samples,train_avg_bleu,train_exact_match_rate,eval_avg_loss,eval_perplexity,eval_token_accuracy,eval_num_samples,eval_avg_bleu,eval_exact_match_rate,number_parameter,cpp_model_size
+emb12_h2_l1_d001_ep300_bs4_lr001,12,2,1,0.01,300,4,0.01,0.16340939700603485,1.1775186636378328,0.9322033898305084,14,1.0,1.0,8.9437894821167,7660.170202357485,0.27884615384615385,6,0.0625,0.0,4848,86347

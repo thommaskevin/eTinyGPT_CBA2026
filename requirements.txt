@@ -1,0 +1,14 @@
+hf-xet
+matplotlib
+matplotlib-inline
+numpy==2.2.6
+ollama
+pandas
+torch
+tqdm
+transformers
+carbontracker
+pdfplumber
+scikit-learn
+nltk
+wordcloud
